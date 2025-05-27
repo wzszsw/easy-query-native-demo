@@ -27,7 +27,7 @@ public class TreeNode implements ProxyEntityAvailable<TreeNode , TreeNodeProxy> 
 
     private Long parentId;
 
-    @Navigate(value = RelationTypeEnum.ManyToOne,targetProperty = "id")
+    @Navigate(value = RelationTypeEnum.ManyToOne,targetProperty = "id", selfProperty = "parentId")
     private TreeNode parent;
 
 
